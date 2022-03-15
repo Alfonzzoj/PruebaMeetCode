@@ -1,0 +1,66 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+.f-pri{
+    font-family: 'Caveat', cursive;
+}
+.f-sec{
+    font-family: 'Open Sans', sans-serif;
+}
+#padre {
+    position: relative;    /* para poder posicionar el texto de forma absoluta */
+    display: inline-block; /* para que solo ocupe el ancho de la imagen */
+  }
+.card-title {
+    position: absolute;
+    left: 10rem;    /* posición absolute con respecto al padre */
+    bottom: 25rem;             /* posicionada en la esquina inferior derecha */
+    right: 45rem;
+    font-size: 5rem;
+
+}
+.pintura{
+    position: absolute;
+    left: 0rem;    /* posición absolute con respecto al padre */
+    bottom: 20rem;             /* posicionada en la esquina inferior derecha */
+    right: 45rem;
+    width: 50rem;
+}
+.overflow{
+    overflow: hidden;
+    height: 50%;
+}
+.overflow .card-img-top{
+    transform: scale(1);
+    transition: all 0.2s ease-in-out;
+}
+.overflow .card-img-top:hover{
+    transform: scale(1.8);
+}
+.card:hover{
+    /* border-color: #D8AD3D; */
+    color: #D8AD3D;
+}
+.contenedor{
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+.texto-encima{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+.centrado{
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    font-size: 400%;
+
+}
+.btn:hover{
+    background-color: #009CD9;
+    border: #009CD9;
+}
